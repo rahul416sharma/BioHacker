@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Working\\Projects\\Working\\BioHacker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|D:\\Working\\Projects\\Working\\BioHacker\\payment\\payment.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|solutionrelative:payment\\payment.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|D:\\Working\\Projects\\Working\\BioHacker\\payment\\payment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|solutionrelative:payment\\payment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|d:\\working\\projects\\working\\biohacker\\payment\\charge.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|solutionrelative:payment\\charge.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|D:\\Working\\Projects\\Working\\BioHacker\\angular\\websitecontroller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|solutionrelative:angular\\websitecontroller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|d:\\working\\projects\\working\\biohacker\\payment\\charge.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|solutionrelative:payment\\charge.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|D:\\Working\\Projects\\Working\\BioHacker\\app_code\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|solutionrelative:app_code\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|D:\\Working\\Projects\\Working\\BioHacker\\webcontrol\\navbar.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
+      "RelativeMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|solutionrelative:webcontrol\\navbar.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|d:\\working\\projects\\working\\biohacker\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|D:\\Working\\Projects\\Working\\BioHacker\\masterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|solutionrelative:masterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|D:\\Working\\Projects\\Working\\BioHacker\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B3ECD8A3-668A-A6EF-9D84-3B616D4312EF}|D:\\Working\\Projects\\Working\\BioHacker|solutionrelative:default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Working\\Projects\\Working\\BioHacker\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "D:\\Working\\Projects\\Working\\BioHacker\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-04T08:56:01.314Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Service.cs",
+              "DocumentMoniker": "D:\\Working\\Projects\\Working\\BioHacker\\App_Code\\Service.cs",
+              "RelativeDocumentMoniker": "App_Code\\Service.cs",
+              "ToolTip": "D:\\Working\\Projects\\Working\\BioHacker\\App_Code\\Service.cs",
+              "RelativeToolTip": "App_Code\\Service.cs",
+              "ViewState": "AgIAAMoCAAAAAAAAAAAowNICAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T06:30:37.098Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Websitecontroller.js",
+              "DocumentMoniker": "D:\\Working\\Projects\\Working\\BioHacker\\Angular\\Websitecontroller.js",
+              "RelativeDocumentMoniker": "Angular\\Websitecontroller.js",
+              "ToolTip": "D:\\Working\\Projects\\Working\\BioHacker\\Angular\\Websitecontroller.js",
+              "RelativeToolTip": "Angular\\Websitecontroller.js",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAowC4GAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-02T08:40:36.573Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Charge.aspx",
+              "DocumentMoniker": "D:\\Working\\Projects\\Working\\BioHacker\\Payment\\Charge.aspx",
+              "RelativeDocumentMoniker": "Payment\\Charge.aspx",
+              "ToolTip": "D:\\Working\\Projects\\Working\\BioHacker\\Payment\\Charge.aspx",
+              "RelativeToolTip": "Payment\\Charge.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-03T12:31:36.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Payment.aspx",
+              "DocumentMoniker": "D:\\Working\\Projects\\Working\\BioHacker\\Payment\\Payment.aspx",
+              "RelativeDocumentMoniker": "Payment\\Payment.aspx",
+              "ToolTip": "D:\\Working\\Projects\\Working\\BioHacker\\Payment\\Payment.aspx",
+              "RelativeToolTip": "Payment\\Payment.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-03T12:33:40.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Payment.aspx.cs",
+              "DocumentMoniker": "D:\\Working\\Projects\\Working\\BioHacker\\Payment\\Payment.aspx.cs",
+              "RelativeDocumentMoniker": "Payment\\Payment.aspx.cs",
+              "ToolTip": "D:\\Working\\Projects\\Working\\BioHacker\\Payment\\Payment.aspx.cs",
+              "RelativeToolTip": "Payment\\Payment.aspx.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAkwEUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T12:33:43.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Charge.aspx.cs",
+              "DocumentMoniker": "D:\\Working\\Projects\\Working\\BioHacker\\Payment\\Charge.aspx.cs",
+              "RelativeDocumentMoniker": "Payment\\Charge.aspx.cs",
+              "ToolTip": "D:\\Working\\Projects\\Working\\BioHacker\\Payment\\Charge.aspx.cs",
+              "RelativeToolTip": "Payment\\Charge.aspx.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwC0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T12:31:38.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "D:\\Working\\Projects\\Working\\BioHacker\\Default.aspx",
+              "RelativeDocumentMoniker": "Default.aspx",
+              "ToolTip": "D:\\Working\\Projects\\Working\\BioHacker\\Default.aspx",
+              "RelativeToolTip": "Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-02T06:40:25.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NavBar.ascx",
+              "DocumentMoniker": "D:\\Working\\Projects\\Working\\BioHacker\\WebControl\\NavBar.ascx",
+              "RelativeDocumentMoniker": "WebControl\\NavBar.ascx",
+              "ToolTip": "D:\\Working\\Projects\\Working\\BioHacker\\WebControl\\NavBar.ascx",
+              "RelativeToolTip": "WebControl\\NavBar.ascx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2025-07-01T14:05:55.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MasterPage.master",
+              "DocumentMoniker": "D:\\Working\\Projects\\Working\\BioHacker\\MasterPage.master",
+              "RelativeDocumentMoniker": "MasterPage.master",
+              "ToolTip": "D:\\Working\\Projects\\Working\\BioHacker\\MasterPage.master",
+              "RelativeToolTip": "MasterPage.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-01T12:55:08.708Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

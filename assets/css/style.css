@@ -4499,8 +4499,8 @@ a {
  
 .whatsapp {
 	position: fixed;
-	bottom: 100px;
-	right: 1%;
+	bottom: 135px;
+	right: 2%;
 	z-index: 99;
 }
 
@@ -6634,11 +6634,11 @@ header {
 		display: none;
 		height: 0px;
 		left: 0;
-		top: 21px;
+		top: 0px;
 		z-index: 2;
 		-webkit-transition: all .5s ease;
 		transition: all .5s ease;
-		padding-top: 20px;
+		padding-top: 10px;
 	}
 
 		header nav .have-children .sub-nav .sub-nav-child-wrapper {
@@ -12104,9 +12104,9 @@ section.solid-background .buller-white::before {
 			top: -1px;
 			display: block;
 			left: 0;
-			box-shadow: -16px -12px 18px -8px white;
+/*			box-shadow: -16px -12px 18px -8px white;
 			-webkit-box-shadow: -16px -12px 18px -8px white;
-			-moz-box-shadow: -16px -12px 18px -8px white;
+			-moz-box-shadow: -16px -12px 18px -8px white;*/
 		}
 
 .item {
@@ -36349,4 +36349,222 @@ a {
 }
 .clarea img {
 	border-radius: 15px;
+}
+
+.Perso-Epe {
+	float: left;
+	width: 100%;
+	padding: 120px 0 80px 0;
+	background: #f4efec;
+	position: relative;
+}
+
+	.Perso-Epe:before {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		background: url(../images/exp-bg-pattren.svg);
+		background-repeat: no-repeat;
+		background-size: 80%;
+		background-position: calc(200%) calc(-154px);
+		opacity: .05;
+	}
+
+	.Perso-Epe .container {
+		position: relative;
+		/*z-index: 99;*/
+	}
+
+	.Perso-Epe .title {
+		float: left;
+		width: 100%;
+		font-size: 46px;
+		font-family: 'classico-regular';
+		margin-top: 0;
+		margin-bottom: 0px;
+		color: #3d3739;
+		text-align: center;
+	}
+
+	.Perso-Epe .Sub-title {
+		float: left;
+		width: 100%;
+		font-size: 18px;
+		font-family: 'Montserrat', sans-serif;
+		margin: 40px 0;
+		color: #3d3739;
+		text-align: center;
+		padding: 0 16%;
+		font-weight: 200;
+	}
+
+	.Perso-Epe .bottom-Sub-title {
+		float: left;
+		width: 100%;
+		font-size: 18px;
+		font-family: 'Montserrat', sans-serif;
+		margin: 0 0 30px 0;
+		font-weight: 500;
+		color: #3d3739;
+		text-align: center;
+		padding: 0 16%;
+		text-transform: uppercase;
+	}
+
+	.Perso-Epe ul {
+		float: left;
+		width: 100%;
+		padding: 0;
+		margin: 0 0 60px 0;
+		list-style: none;
+	}
+
+		.Perso-Epe ul li {
+			float: left;
+			width: calc(calc(100% - 14%) / 2);
+			position: relative;
+			padding-left: 135px;
+			margin-top: 40px;
+		}
+
+			.Perso-Epe ul li span {
+				width: 114px;
+				height: 114px;
+				background: #f4efec;
+				position: absolute;
+				left: 0;
+				top: 0;
+				border-radius: 100%;
+				box-shadow: -5px -5px 5px rgba(255,255,255,.5) !important;
+			}
+
+				.Perso-Epe ul li span:after {
+					box-shadow: 3px 3px 8px rgba(0,0,0,.05) !important;
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					content: "";
+					border-radius: 100%;
+				}
+
+				.Perso-Epe ul li span img {
+					position: absolute;
+					width: 50px;
+					height: 50px;
+					margin: auto;
+					display: block;
+					margin: auto;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+				}
+
+			.Perso-Epe ul li:nth-child(2n+2) {
+				float: right;
+			}
+
+			.Perso-Epe ul li:nth-child(3n+3) {
+				clear: both;
+			}
+
+			.Perso-Epe ul li span {
+				float: right;
+			}
+
+			.Perso-Epe ul li b {
+				float: left;
+				width: 100%;
+				font-size: 16px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 500;
+				text-transform: uppercase;
+				color: #3d3739;
+			}
+
+			.Perso-Epe ul li p {
+				float: left;
+				width: 100%;
+				font-size: 16px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 200;
+				text-transform: normal;
+				color: #3d3739;
+			}
+
+	.Perso-Epe .bookAppoint {
+		margin: auto;
+		display: table;
+		clear: both;
+		text-decoration: none;
+		cursor: pointer;
+		position: relative;
+		padding: 15px 20px !important;
+		box-shadow: -7px -7px 6px rgba(255,255,255,.9);
+		box-shadow: 15px 16px 20px -10px rgba(0, 0, 0, 0.1) !important;
+		-webkit-box-shadow: 15px 16px 20px -10px rgba(0, 0, 0, 0.1) !important;
+		-moz-box-shadow: 15px 16px 20px -10px rgba(0, 0, 0, 0.1) !important;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-family: "Montserrat";
+		font-weight: 200;
+		-webkit-transition: -webkit-box-shadow 1s ease-in-out;
+		transition: -webkit-box-shadow 1s ease-in-out;
+		transition: box-shadow 1s ease-in-out;
+		transition: box-shadow 1s ease-in-out, -webkit-box-shadow 1s ease-in-out;
+		background-color: #f4efec;
+		font-weight: 300;
+		color: #726965;
+		border-radius: 25px
+	}
+
+		.Perso-Epe .bookAppoint:before {
+			content: "";
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			box-shadow: -16px -12px 18px -8px white;
+			-webkit-box-shadow: -16px -12px 18px -8px white;
+			-moz-box-shadow: -16px -12px 18px -8px white;
+			position: absolute;
+			border-radius: 25px;
+		}
+
+		.Perso-Epe .bookAppoint:hover {
+			-webkit-box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12) !important;
+			box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12) !important;
+		}
+.Web-Shortheading {
+	color: #3d3739;
+	font-family: 'Times New Roman', Times, serif !important;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+
+.Web-heading {
+	color: #3d3739;
+	/*	font-family: Montserrat;*/
+	font-family: 'Times New Roman', Times, serif !important;
+	font-size: 4rem;
+}
+
+.shorthead {
+	font-family: Montserrat !important;
+	letter-spacing: 4px;
+}
+
+.content-web {
+	font-family: Montserrat !important;
+	font-weight: 580 !important;
+}
+.btn-style{
+	font-weight:500!important
 }

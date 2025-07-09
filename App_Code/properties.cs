@@ -6,12 +6,18 @@ using System.Web;
 
 namespace Property
 {
+	public class Dropdown
+	{
+		public string Id { get; set; }
+		public string Name { get; set; }
+		public string orderNo { get; set; }
+    }
  
 	public class Category
 	{
 		public string Id { get; set; }
 		public string CategoryName { get; set; }
-		public string Status { get; set; }
+		public string InsDate { get; set; }
 	}
 	public class SubCategory
 	{
@@ -19,8 +25,10 @@ namespace Property
 		public string SubCategoryName { get; set; }
 		public string CategoryId { get; set; }
 		public string CategoryName { get; set; }
-		public string Isactive { get; set; }
-		public string Status { get; set; }
+		public string CategoryDesc { get; set; }
+		public string CategoryKeyBenefit { get; set; }
+		public string KeyBenefitImg { get; set; }
+		public string InsDate { get; set; }
 	}
 	public class Detail
 	{
@@ -30,14 +38,13 @@ namespace Property
 		public string CategoryName { get; set; }
 		public string SubCategoryName { get; set; }
 		public string Title { get; set; }
-		public string SubTitle { get; set; }
 		public string Description { get; set; }
 		public string Image { get; set; }
-		public string Status { get; set; }
+		public string Price { get; set; }
 		public string InsDate { get; set; }
-		public string SeoTitle { get; set; }
-		public string SeoDescription { get; set; }
-		public string SeoKeywords { get; set; }
+		public string KeyBenefit { get; set; }
+		public string KeyBenefitImg { get; set; }
+		public string OrderBy { get; set; }
 	}
 	public class ddlSubCategory
 	{
@@ -286,5 +293,18 @@ namespace Property
         public string BranchStateName { get; set; }
         public string BranchCityName { get; set; }
         public string PersonImg { get; set; }
+    }
+
+    public class viewData
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Image { get; set; }
+        public string Description { get; set; }
+        public string DetailId { get; set; }
+        public string DetailName { get; set; }
+        public string DetailOrderNo { get; set; }
+        public string TypeId { get; set; }
+        public string TypeName { get; set; }
     }
 }

@@ -22,7 +22,7 @@
 
 							<div class="col-4">
 								<br />
-								<input id="submit" ng-modal="submit" type="button" ng-click="submit()" class="btn btn-danger" value="Submit" />
+								<input id="submit" ng-modal="submit" type="button" ng-click="submit()" class="btn btn-danger" value="{{jackbtn}}" />
 							</div>
 						</div>
 					</div>
@@ -38,7 +38,7 @@
 										<tr class="success">
 											<th data-sort-initial="true" data-toggle="true">Sr.No</th>
 											<th>Category Name</th>
-											<th>Status</th>
+											<th>Ins Date</th>
 											<th data-sort-ignore="true" class="min-width">Action</th>
 										</tr>
 									</thead>
@@ -51,7 +51,7 @@
 											</div>
 											<div class="col-sm-6 text-right m-b-20">
 												<div class="form-group">
-													<input id="demo-input-search2" type="text" placeholder="Search" class="form-control"
+													<input id="demo-input-search2" type="text" ng-model="search"  placeholder="Search" class="form-control"
 														autocomplete="off">
 												</div>
 
@@ -59,10 +59,10 @@
 										</div>
 									</div>
 									<tbody>
-										<tr ng-repeat="d in CategoryData">
+										<tr ng-repeat="d in CategoryData | filter : search">
 											<td>{{$index+1}}</td>
 											<td>{{d.CategoryName}}</td>
-											<td>{{d.Status}}</td>
+											<td>{{d.InsDate}}</td>
 											<td style="text-align: center">
 												<a class="tip" href="#" data-original-title="Edit Task" ng-click="editdata(d.Id);"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 												&nbsp<a class="tip" href="#" data-original-title="Delete" data-ng-click="delClient(d.Id);"><i class="fa fa-trash-o" aria-hidden="true"></i></a>

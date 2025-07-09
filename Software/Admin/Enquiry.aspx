@@ -8,23 +8,29 @@
 
 	<div class="container" data-ng-app="Website">
 		<div class="row" data-ng-controller="Enquiry">
-			<div class="pagee">
+			<div class="card">
 				<div class="col-md-12 col-sm-12 col-lg-12 col-xl-12">
 					<div class="card-body">
 						<h1>Enquiry Detail</h1>
 						<br />
-						<div class="form-row">
+						<div class="row">
 							<div class="col-6">
-								<label for="inputEmail4">Start Date*</label>
-								<input type="date" id="Start_Date" ng-modal="Course_Duration" class="form-control" placeholder="Course Duration">
+								<div class="mb-3">
+									<label for="inputEmail4">Start Date*</label>
+									<input type="date" id="Start_Date" ng-modal="Course_Duration" class="form-control" placeholder="Course Duration">
+								</div>
 							</div>
 							<div class="col-6">
-								<label for="inputEmail4">End Date</label>
-								<input type="date" id="End_Date" ng-modal="Course_Fee" class="form-control" placeholder="Course Fee">
+								<div class="mb-3">
+									<label for="inputEmail4">End Date</label>
+									<input type="date" id="End_Date" ng-modal="Course_Fee" class="form-control" placeholder="Course Fee">
+								</div>
 							</div>
 							<div class="col-2">
-								<br />
-								<input id="submit" ng-modal="submit" type="button" ng-click="submit()" class="btn btn-danger" value="Submit" />
+								<div class="mb-3">
+									<br />
+									<input id="submit" ng-modal="submit" type="button" ng-click="submit()" class="btn btn-danger" value="Submit" />
+								</div>
 							</div>
 						</div>
 					</div>

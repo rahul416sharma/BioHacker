@@ -15,16 +15,60 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- Font Awesome 6 CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    	<link rel="shortcut icon" href="../assets/fav.png">
 
     <!-- jQuery -->
+    <!--Start of Tawk.to Script-->
+
+    <!--End of Tawk.to Script-->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body class="home wp-singular page-template-default page page-id-9 wp-theme-aeon elementor-default elementor-kit-8 elementor-page elementor-page-9">
 
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/686270be1c010c190e036b19/1iv08gqrc';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+</script>
+
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     </asp:ContentPlaceHolder>
-    <footer class="nitro-lazy">
+
+    <style>
+        .social-links {
+            display: flex;
+            gap: 15px; /* <-- Adjust gap here */
+            align-items: center;
+        }
+
+            .social-links a {
+                color: white; /* Optional: icon color */
+                font-size: 20px; /* Optional: icon size */
+                text-decoration: none;
+            }
+
+                .social-links a:hover {
+                    color: black;
+                }
+
+        @media (max-width: 576px) {
+            .social-links {
+                gap: 10px;
+            }
+
+                .social-links a {
+                    font-size: 18px;
+                }
+        }
+    </style>
+    <footer class="nitro-lazy" style="background: #8C7B73">
         <div class="container">
             <div class="row gutter-y-40">
                 <div class="col-xl-6 col-lg-6 col-md-7 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
@@ -43,19 +87,19 @@
                         </a>
                         <!-- /.footer-widget__btn -->
                         <div class="social-links">
-                            <a href="https://facebook.com/">
+                            <a href="https://www.facebook.com/TheBioHackeroffical/">
                                 <i class="fab fa-facebook-f" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook</span>
                             </a>
-                            <a href="https://twitter.com/">
+                            <a href="https://x.com/The_biohacker_">
                                 <i class="fab fa-twitter" aria-hidden="true"></i>
                                 <span class="sr-only">Twitter</span>
                             </a>
-                            <a href="https://instagram.com/">
+                            <a href="https://www.instagram.com/thebiohacker_official">
                                 <i class="fab fa-instagram" aria-hidden="true"></i>
                                 <span class="sr-only">Instagram</span>
                             </a>
-                            <a href="https://youtube.com/">
+                            <a href="https://www.youtube.com/@thebiohacker">
                                 <i class="fab fa-youtube" aria-hidden="true"></i>
                                 <span class="sr-only">Youtube</span>
                             </a>
@@ -110,7 +154,7 @@
                         <div class="main-footer__info__col-1 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
                             <div class="main-footer__contact">
                                 <span class="main-footer__contact__icon">
-                                    <i class="icon-location"></i>
+                                    <i class="fas fa-home"></i>
                                 </span>
                                 <!-- /.main-footer__contact__icon -->
                                 <div class="main-footer__contact__content">
@@ -127,7 +171,7 @@
                         <div class="main-footer__info__col-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
                             <div class="main-footer__contact">
                                 <span class="main-footer__contact__icon">
-                                    <i class="icon-email"></i>
+                                    <i class="fas fa-envelope"></i>
                                 </span>
                                 <!-- /.main-footer__contact__icon -->
                                 <div class="main-footer__contact__content">
@@ -144,7 +188,7 @@
                         <div class="main-footer__info__col-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
                             <div class="main-footer__contact">
                                 <span class="main-footer__contact__icon">
-                                    <i class="icon-telephone"></i>
+                                    <i class="fas fa-phone"></i>
                                 </span>
                                 <!-- /.main-footer__contact__icon -->
                                 <div class="main-footer__contact__content">
@@ -169,14 +213,14 @@
 
 
     <div class="whatsapp">
-        <a href="https://wa.me/97145185777?text=Hi%2C%20I%20am%20contacting%20through%20Aeon%20website.%20" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="https://wa.me/9892123121?text=Hi%20BioHacker" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
     </div>
-    <div class="copyright text-center">
+    <div class="copyright text-center" style="background: #cfbbb0 !important; color: black !important">
         <div class="container">
             <p>
                 Copyright &copy;
 			
-                <template data-nitro-marker-id="1c7d9f9cfd0ff2f737eb264ceb8493ba-1">
+                <template>
                 </template>
                 The BioHacker. All Rights Reserved.    
 		
@@ -184,16 +228,16 @@
         </div>
     </div>
 
-    <div class="mobile-contact d-none" style="margin-bottom: 55px;">
+    <%--    <div class="mobile-contact d-none" style="margin-bottom: 55px;">
         <a href="tel:+97145185777">
-            <img src="assets/uploads/2023/03/aeon-mob.png" class="nitro-lazy" decoding="async" nitro-lazy-empty id="MzU5NzoxMTE=-1" src="data:image/svg+xml;nitro-empty-id=MzU5NzoxMTE=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAgMjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=" />
+            <img src="#" class="nitro-lazy" decoding="async" nitro-lazy-empty id="MzU5NzoxMTE=-1" src="data:image/svg+xml;nitro-empty-id=MzU5NzoxMTE=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAgMjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=" />
             +971 4 518 5777</a>
     </div>
     <div class="mobile-contact d-none">
         <a href="https://shop.theaeonclinic.com/property/aeovae/vouchers/list">
             <img src="assets/uploads/2024/12/vouchericon.png" class="nitro-lazy" decoding="async" nitro-lazy-empty id="MzYwMDoxNTY=-1" src="data:image/svg+xml;nitro-empty-id=MzYwMDoxNTY=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=" />
             E-Gift Vouchers</a>
-    </div>
+    </div>--%>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

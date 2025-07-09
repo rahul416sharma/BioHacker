@@ -134,7 +134,7 @@
 											</div>
 											<div class="col-sm-6 text-right m-b-20">
 												<div class="form-group">
-													<input id="demo-input-search2" type="text" placeholder="Search" class="form-control"
+													<input id="demo-input-search2" ng-model="search" type="text" placeholder="Search" class="form-control"
 														autocomplete="off">
 												</div>
 
@@ -142,7 +142,7 @@
 										</div>
 									</div>
 									<tbody>
-										<tr ng-repeat="d in SubCategoryData">
+										<tr ng-repeat="d in SubCategoryData  | filter : search">
 											<td>{{$index+1}}</td>
 											<td>{{d.CategoryName}}</td>
 											<td>{{d.SubCategoryName}}</td>

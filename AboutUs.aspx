@@ -1,292 +1,32 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AboutUs.aspx.cs" Inherits="Default2" %>
 
+<%@ Register Src="~/WebControl/NavBar.ascx" TagName="NavBar" TagPrefix="uc" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <header class="inner-page">
-        <div class="nav-wrappper">
-            <div class="container">
-                <div class="row tr-logo" style="padding-top: 15px;">
-                    <div class="col-md-10 header-logo">
-                        <a href="default.aspx" class="nitro-lazy">
-                            <img src="assets/logo-black.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="row  nav-row" style="margin-top: 15px;">
-                    <div class="col-md-12 text-center">
-                        <nav>
-                            <ul>
-                                <li class="main-menu"><a href="AboutUs.aspx" style="font-weight: 1000">About US</a> </li>
-                                <li class="main-menu"><a href="concierge/index.html" style="font-weight: 1000">Test</a> </li>
-                                <li class="main-menu have-children"><a href="treatments/index.html" style="font-weight: 1000">INVASIVE THERAPIES</a>
-                                    <div class="sub-nav" style="overflow-y: scroll">
-                                        <div class="sub-nav-child-wrapper">
-                                            <ul>
-                                                <li class="sub-nav-hav-children"><a href="treatments/index.html#regenerative-wellness" class="btn btn-primary">Vitamin Shots </a>
-                                                    <div class="sub-nav-child">
-                                                        <ul>
-                                                            <li><a href="treatments/detoxification/index.html">Vitamin D Shot </a></li>
-                                                            <li><a href="treatments/hyperbaric-oxygen-therapy/index.html">Vitamin B12 Shot </a></li>
-                                                            <li><a href="treatments/iv-laser-therapy-in-dubai/index.html">Vitamin C Shot </a></li>
-                                                            <li><a href="treatments/iv-vitamin-drips/index.html">Glutathione Shot </a></li>
-                                                            <li><a href="treatments/male-wellness/index.html">CoQ Shot </a></li>
-                                                            <li><a href="treatments/nad-iv-therapy-in-dubai/index.html">Energy Shot </a></li>
-                                                            <li><a href="treatments/nutrition-and-weight-loss-program/index.html">Magnesium Shot </a></li>
-                                                            <li><a href="treatments/pemf-therapy-in-dubai/index.html">Antioxidant Shot </a></li>
-                                                            <li><a href="treatments/peptide-therapy/index.html">Slim Boost Shots </a></li>
-                                                            <li><a href="treatments/red-light-therapy-in-dubai/index.html">Beauty B Shot </a></li>
-                                                            <li><a href="treatments/shock-wave-therapy/index.html">Nad + Shot </a></li>
-                                                            <li><a href="treatments/stress-management/index.html">Hair Vitamin Shot </a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="sub-nav-hav-children"><a href="treatments/index.html#regenerative-medicine" class="btn btn-primary">Peptide Therapy</a>
-                                                    <div class="sub-nav-child" style="overflow: scroll;">
-                                                        <ul>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">BPC-157 Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">CJC-1295 Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">GHK-Cu Copper Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Selank Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Semaglutide / Ozempic / GLP-1 Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Ttirzepatide / Mounjaro Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Thymosin Alpha 1 Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Thymosin Beta-4 (TB-500) Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Tesamorelin Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">MOTS-c Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">SS-31 Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">LL-37 Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Cerebrolysin Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Semax PeptideTherapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Kisspeptin Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">VIP (Vasoactive Intestinal ) Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">PE-22-28 Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Retatrutide Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Ipamorelin Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">KPV Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">AOD 9604 Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">5-Amino 1mq Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">DSIP Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">IGF-1 LR3 Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Epithalon Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Cagrilintide Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">ARA 290 Peptide Therapy </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Humanin Peptide Therapy</a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Thymalin Peptide Therapy</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">IV drip </a>
-                                                    <div class="sub-nav-child" style="overflow: scroll;">
-                                                        <ul>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Cold and Flu IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Hair Vitality </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">High Dose Vitamin C </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Jet Lag IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Allergy IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Brain IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Detox IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Gut Health IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Hangover IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Hydration IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Migraine IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">NAD+ IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Performance Booster IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Stress IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Super Immune IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Weight Loss IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Anti Aging IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Energy Booster IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Glamour IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Her Monthly IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Myers Cocktail IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Methylene Blue IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Recover IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">The Biohacker's IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Exosome IV </a></li>
-                                                            <li><a href="#" style="letter-spacing: 0 !important;">Stem Cell IV </a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Intravenous laser therapy</a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">NAD+ Therapy </a>
-                                                </li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Ozone Therapy </a>
-                                                </li>
-                                                <li class="sub-nav-hav-children">
-                                                    <div class="sub-nav-child">
-                                                        <ul></ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="main-menu have-children"><a href="programmes/index.html" style="font-weight: 1000">NON-INVASIVE THERAPIES</a>
-                                    <div class="sub-nav" style="overflow-y: scroll">
-                                        <div class="sub-nav-child-wrapper">
-                                            <ul>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Hyperbaric Oxygen Therapy </a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Infrared ozone sauna </a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Compression therapy </a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Photobiomodulation Therapy ( Red Light Therapy) </a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Cold Plunge </a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Nano Vi </a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">FireLight Therapy </a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Presso Therapy </a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">PEMF Therapy </a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Red Light - Panel </a></li>
-                                                <li class="sub-nav-hav-children"><a href="#" class="btn btn-primary">Ozone Therapy </a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="main-menu has-child"><a href="#" style="font-weight: 1000">FOR YOU</a>
-                                    <div class="sub-menu-container-2">
-                                        <ul class="sub-menu-2">
-                                            <li class=""><a href="pr/index.html" style="font-weight: 1000">PRESS</a></li>
-                                            <li class=""><a href="blog/index.html" style="font-weight: 1000">Blog</a></li>
-                                            <li class=""><a href="news/index.html" style="font-weight: 1000">News</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="main-menu" style="display: none;"><a href="#" style="font-weight: 1000">Services</a> </li>
-                                <li class="main-menu"><a href="contact-us/index.html" style="font-weight: 1000">Book Now</a> </li>
 
-                                <li class="header-call" style="display: none;"><a href="tel:+971045185777">+971 04 5185777</a> </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="mobile-nav-wrapper">
-                    <input type="checkbox" id="menyAvPaa" />
-                    <label id="burger" for="menyAvPaa">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </label>
-                    <nav id="mobile-nav">
-                        <ul>
-                            <li><a href="AboutUs.aspx">About US</a> </li>
-                            <li><a href="#">Test</a> </li>
-                            <li class="mobile-nav-has-children"><a href="treatments/index.html">INVASIVE THERAPIES<span class="toggle-sub-nav nitro-lazy"></span></a>
-                                <div class="mobile-sub-nav-container">
-                                    <ul>
-                                        <li class="mobile-sub-nav-children"><a href="#">Vitamin Shots</a>
-                                            <ul>
-                                                <li><a href="treatments/detoxification/index.html">Vitamin D Shot </a></li>
-                                                <li><a href="treatments/hyperbaric-oxygen-therapy/index.html">Vitamin B12 Shot </a></li>
-                                                <li><a href="treatments/iv-laser-therapy-in-dubai/index.html">Vitamin C Shot </a></li>
-                                                <li><a href="treatments/iv-vitamin-drips/index.html">Glutathione Shot </a></li>
-                                                <li><a href="treatments/male-wellness/index.html">CoQ Shot </a></li>
-                                                <li><a href="treatments/nad-iv-therapy-in-dubai/index.html">Energy Shot </a></li>
-                                                <li><a href="treatments/nutrition-and-weight-loss-program/index.html">Magnesium Shot </a></li>
-                                                <li><a href="treatments/pemf-therapy-in-dubai/index.html">Antioxidant Shot </a></li>
-                                                <li><a href="treatments/peptide-therapy/index.html">Slim Boost Shots </a></li>
-                                                <li><a href="treatments/red-light-therapy-in-dubai/index.html">Beauty B Shot </a></li>
-                                                <li><a href="treatments/shock-wave-therapy/index.html">Nad + Shot </a></li>
-                                                <li><a href="treatments/stress-management/index.html">Hair Vitamin Shot </a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mobile-sub-nav-children"><a href="#">Intravenous laser therapy</a> </li>
-                                        <li class="mobile-sub-nav-children"><a href="#">Peptide Therapy</a>
-                                            <ul>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">BPC-157 Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">CJC-1295 Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">GHK-Cu Copper Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Selank Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Semaglutide / Ozempic / GLP-1 Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Ttirzepatide / Mounjaro Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Thymosin Alpha 1 Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Thymosin Beta-4 (TB-500) Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Tesamorelin Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">MOTS-c Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">SS-31 Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">LL-37 Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Cerebrolysin Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Semax PeptideTherapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Kisspeptin Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">VIP (Vasoactive Intestinal ) Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">PE-22-28 Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Retatrutide Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Ipamorelin Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">KPV Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">AOD 9604 Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">5-Amino 1mq Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">DSIP Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">IGF-1 LR3 Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Epithalon Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Cagrilintide Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">ARA 290 Peptide Therapy </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Humanin Peptide Therapy</a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Thymalin Peptide Therapy</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mobile-sub-nav-children"><a href="#">IV drip</a>
-                                            <ul>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Cold and Flu IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Hair Vitality </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">High Dose Vitamin C </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Jet Lag IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Allergy IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Brain IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Detox IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Gut Health IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Hangover IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Hydration IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Migraine IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">NAD+ IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Performance Booster IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Stress IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Super Immune IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Weight Loss IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Anti Aging IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Energy Booster IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Glamour IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Her Monthly IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Myers Cocktail IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Methylene Blue IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Recover IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">The Biohacker's IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Exosome IV </a></li>
-                                                <li><a href="#" style="letter-spacing: 0 !important;">Stem Cell IV </a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="mobile-nav-has-children"><a href="programmes/index.html">NON-INVASIVE THERAPIES<span class="toggle-sub-nav nitro-lazy"></span></a>
-                                <div class="mobile-sub-nav-container">
-                                    <ul>
-                                        <li><a href="#">Hyperbaric Oxygen Therapy </a></li>
-                                        <li><a href="#">Infrared ozone sauna </a></li>
-                                        <li><a href="#">Compression therapy </a></li>
-                                        <li><a href="#">Photobiomodulation Therapy ( Red Light Therapy) </a></li>
-                                        <li><a href="#">Cold Plunge </a></li>
-                                        <li><a href="#">Nano Vi </a></li>
-                                        <li><a href="#">FireLight Therapy </a></li>
-                                        <li><a href="#">Presso Therapy </a></li>
-                                        <li><a href="#">PEMF Therapy </a></li>
-                                        <li><a href="#">Red Light - Panel </a></li>
-                                        <li><a href="#">Ozone Therapy </a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="mobile-nav-has-children"><a href="programs/index.html">FOR YOU<span class="toggle-sub-nav nitro-lazy"></span></a>
-                                <div class="mobile-sub-nav-container">
-                                    <ul>
-                                        <li class=""><a href="pr/index.html">PRESS</a></li>
-                                        <li class=""><a href="blog/index.html">Blog</a></li>
-                                        <li class=""><a href="news/index.html">News</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="contact-us/index.html">Book Now</a> </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+    <style>
+        .insta-iframe-scroll {
+            display: flex;
+            gap: 25px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .insta-frame {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            width: 320px;
+            height: 780px;
+            border: none;
+        }
+    </style>
+
+    <header class="inner-page">
+
+        <uc:NavBar ID="NavBar1" runat="server" />
         <div id="main-page-title" class="container position-relative nitro-lazy">
             <div class="banner-content-wrapper">
                 <div class="banner-content">
@@ -297,7 +37,45 @@
         </div>
     </header>
 
-    <section id="aboutUsMessage" class="about-us-message section-block">
+    <section id="aboutUsSection" class="home-aboutus-section section-block nitro-lazy" style="background-color: #f4f3ef">
+        <div id="about-us" class="container">
+            <div class="row about-us-row">
+                <div class="col-md-6">
+                    <div class="as-col  as-col-1">
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <span class="Web-Shortheading" style="font-family: 'Times New Roman'!important; font-weight: bold !important; font-size: 23px!important">About Us </span>
+                        </div>
+                        <p class="hmb content-web" data-aos="fade-up" data-aos-duration="3000">THE BIOHACKER Wellness Centre is a unique, full service clinic that combines the best of conventional medicine with well-researched and effective integrative health therapies. We recognize the importance of conventional medicine but also some of its limitations in dealing with certain conditions.</p>
+                        <p class="hmb content-web">It is often not enough to tackle patient symptomology with pharmaceutical medications alone. We believe in using all therapeutic avenues available to us in order to address the root cause of illness and promote healing.</p>
+                        <div class="round-img-shadow thumb__stampWrapper" data-aos="fade-up" data-aos-duration="3000">
+                            <img alt="Atlantis Dubai" height="387" src="assets/About-us.jpg" class="nitro-lazy" decoding="async" nitro-lazy-empty id="MjMxNjoxMjM=-1" src="data:image/svg+xml;nitro-empty-id=MjMxNjoxMjM=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTUwIDM4NyIgd2lkdGg9IjU1MCIgaGVpZ2h0PSIzODciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="as-col">
+                        <div class="round-img-shadow" data-aos="fade-up" data-aos-duration="3000">
+                            <div id="home-video-2">
+                                <video autoplay="" loop="" muted="" playsinline="">
+                                    <source src="assets/video/The-Biohacker-1.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                        <p class="content-web" data-aos="fade-up" data-aos-duration="3000">
+                            It is our firm belief that when the right strategies are implemented healing is always possible. The key to optimizing health is in understanding each patient’s biochemical individuality and the complex interactions between genetics and the environment. Our physicians are trained in both conventional medicine and cutting-edge integrative health therapies to help every patient find their ‘Healthiest Self’.
+				
+                        </p>
+                        <div class="theme-button-wrapper btn-2-col" data-aos="fade-up" data-aos-duration="3000">
+                            <a href="about-us/index.html" class="btn btn-round-primary btn-style" style="color: black"><span class="buller-white"></span>Learn More </a>
+                            <a class="btn btn-round-soild btn-shadow btn-download btn-style" href="#" target="_blank"><span class="buller-white"></span>Download Brochure </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutUsMessage" class="about-us-message section-block" style="background: #cfbbb0 !important; color: black !important">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-xl-6">
@@ -309,44 +87,173 @@
                 <div class="col-md-8 col-xl-6">
                     <div class="founder-message">
                         <p>
-                            <span class="small-heading">Our Founder</span>
+                            <span class="small-heading" style="color: black !important">Our Founder</span>
                         </p>
-                        <h2 class="section-heading">Lalit Dharmani</h2>
-                        <p style="text-align: left;">
-                            <i><span style="font-weight: 400;">“Lalit Dharmani has always been an innovative mindset – always seeing new possibilities and opportunities. He is creative, collaborative and believes in forward thinking!Fervent in his approach to the health and wellness of himself and after researching anti-aging supplements and holistic approaches to health, he was motivated to pursue his own endeavours.”</span></i>
-                        </p>
-                        <p style="text-align: left;">
-                            <i><span style="font-weight: 400;">Lalit Dharmani, Founder of The BioHacker</span></i>
+                        <h2 class="section-heading" style="color: black !important">Lalit Dharmani</h2>
+                        <p style="color: black !important">Lalit Dharmani has always been an innovative mindset – always seeing new possibilities and opportunities. He is creative, collaborative and believes in forward thinking!</p>
+                        <p style="color: black !important">Fervent in his approach to the health and wellness of himself and after researching anti-aging supplements and holistic approaches to health, he was motivated to pursue his own endeavours. While there are numerous options available in the modern marketplace, including allopathy, acupuncture, homoeopathy, and others – he developed an interest in functional medicine and alternative medicine, which emphasise disease reversal and health optimisation. Additionally, he holds the belief that in order to achieve optimal health, an individual’s biomarkers must be in an optimised state.  As per his assertion, examining blood parameters that fall within the lower normal range does not provide insight into the reports. He also believes that the majority of individuals are committing the gravest error when they disregard the critical nature of diagnosis.   </p>
+                        <p style="color: black !important">
+                            Regenerative and restorative medicine are subjects that Lalit Dharmani finds personally appealing. Lalit Dharmani’s preference for minimising medication usage prompted him to explore the application of advanced restorative medicine. This region was a late adopter of numerous life-altering remedies that he observed being offered today. Therefore, prioritising his own well-being, he pursued cutting-edge treatments and sought instruction from international authorities before deciding to offer these services and treatments to patients in our region.
+                            <br />
+                            Without requiring them to travel to New York or Los Angeles, our members/clients receive the most up-to-date and innovative services due to our ongoing development and education. Get an examination or consultation with Lalit Dharmani and discover a holistic approach to your life ahead.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="" class="section-clinic-lab section-block position-relative nitro-lazy">
+
+
+    <section class="about-us-message section-block" style="background: #f4f3ef !important;color: black !important">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 clinic-lab-content">
-                    <h2 class="section-heading" data-aos="fade-up" data-aos-duration="2000">The The BioHacker Universe</h2>
-                    <div data-aos="fade-up" data-aos-duration="3000">
-                        <p>Welcome to the journey of restoring and enhancing your natural vitality &amp; health, whilst unlocking the secret to a longer, healthier life. We look at ageing as a disease, and we believe in the power of harnessing cellular regeneration &amp; stem cells, to keep patients healthy and youthful despite the passage of time.</p>
-                        <p>Our signature treatments combine stem cell &amp; ozone therapy, nutrition, lifestyle modifications and nutraceuticals with holistic wellness treatments that can help you achieve a fuller, longer life.</p>
-                        <p>We are honored to be the first regenerative wellness centre in the Middle East that offers holistic healing through science, within a luxurious hospitality setting. With over 25 years of experience in Dubai, our trusted doctors can support your journey towards longevity, through a tailored approach, based on each patient’s needs.</p>
-                    </div>
+            <div class="row medical-main-content">
+                <div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="2000">
+                    <h2 class="section-heading">The BioHacker Stories</h2>
                 </div>
-                <div class="col-md-7">
-                    <div class="slider-wrapper">
-                        <div class="slider-clinic-lab">
-                            <div class="round-img-shadow">
-                                <img alt="1_State of Art" src="https://cdn-ilcnknh.nitrocdn.com/NBKONdjJxeQhptMalSshnQRSrZvXEiip/assets/images/optimized/rev-7b18e67/theaeonclinic.com/wp-content/uploads/2023/04/1_State-of-Art.jpg" class="nitro-lazy" decoding="async" nitro-lazy-empty id="MjIwNDoxNTQ=-1" src="data:image/svg+xml;nitro-empty-id=MjIwNDoxNTQ=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTcyMiAxNjkyIiB3aWR0aD0iMTcyMiIgaGVpZ2h0PSIxNjkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" />
-                            </div>
-                        </div>
-                        <span class="slider-clinic-lab-paginatoin">1/4</span>
+            </div>
+            <div class="row justify-content-center">
+                <div class="py-4">
+                    <div class="insta-iframe-scroll">
+
+                        <!-- Post 1 -->
+                        <iframe src="https://www.instagram.com/reel/DD6cJ_6oAHG/embed/captioned/?cr=1&v=14&wp=432&rd=https%3A%2F%2Fthebiohacker.in&rp=%2Fabout-us%2F#%7B%22ci%22%3A3%2C%22os%22%3A4765.300000011921%2C%22ls%22%3A82.30000001192093%2C%22le%22%3A736%7D" frameborder="0" allowfullscreen class="insta-frame"></iframe>
+
+                        <!-- Post 2 -->
+                        <iframe src="https://www.instagram.com/reel/C-hQkBFIBCK/embed/captioned/?cr=1&v=14&wp=432&rd=https%3A%2F%2Fthebiohacker.in&rp=%2Fabout-us%2F#%7B%22ci%22%3A4%2C%22os%22%3A4783.5%2C%22ls%22%3A82.30000001192093%2C%22le%22%3A736%7D" frameborder="0" allowfullscreen class="insta-frame"></iframe>
+
+                        <!-- Post 3 -->
+                        <iframe src="https://www.instagram.com/reel/C6eDjsRSKVM/embed/captioned/?cr=1&v=14&wp=432&rd=https%3A%2F%2Fthebiohacker.in&rp=%2Fabout-us%2F#%7B%22ci%22%3A5%2C%22os%22%3A4803.800000011921%2C%22ls%22%3A82.30000001192093%2C%22le%22%3A736%7D" frameborder="0" allowfullscreen class="insta-frame"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="" class="section-block section-medical-program" style="background: #cfbbb0 !important; color: black !important">
+        <div class="container">
+            <div class="row medical-main-content">
+                <div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="2000">
+                    <h2 class="section-heading">The BioHacker Blog</h2>
+                    <p class="text-center" style="color: black !important">Bio Hacker offers a full-fledged medical program that entails many steps, starting from the initial assessment to follow-up visits. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center d-flex flex-wrap justify-content-center gap-3 mt-3">
+                    <a href="javascript:void(0);" class="biotab tab-btn active" data-target="blog_tab1">Fitness Biohackers</a>
+                    <a href="javascript:void(0);" class="biotab tab-btn" data-target="blog_tab2">Sleep Improvment</a>
+                    <a href="javascript:void(0);" class="biotab tab-btn" data-target="blog_tab3">Diseases</a>
+                    <a href="javascript:void(0);" class="biotab tab-btn" data-target="blog_tab4">Nutrition</a>
+                    <br />
+                    <br />
+                </div>
+            </div>
+            <div class="container mt-4 tab-content-item" id="blog_tab1">
+                <div class="row row about-us-row align-items-center">
+                    <!-- Image Column -->
+                    <div class="col-12 col-md-6 mb-3 mb-md-0 round-img">
+                        <div class="as-col  as-col-1">
+                            <img src="assets/blogimg1.png" class="nitro-lazy" alt="Article 1">
+                        </div>
+                    </div>
+                    <!-- Text Column -->
+                    <div class="col-12 col-md-6">
+                        <div class="as-col">
+                            <h3>Unique mental health issues faced by Gen Z and ways to help them in their healing journey</h3>
+                            <p>In today's fast-paced digital era, the mental health landscape has signifi cantly impacted Generation Z, or Gen Z, often referred to as the “Digital Natives.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4 tab-content-item d-none" id="blog_tab2">
+                <div class="row row about-us-row align-items-center">
+                    <!-- Image Column -->
+                    <div class="col-12 col-md-6 mb-3 mb-md-0 round-img">
+                        <div class="as-col  as-col-1">
+                            <img src="assets/blogimg2.jpg" class="nitro-lazy" alt="Article 1">
+                        </div>
+                    </div>
+                    <!-- Text Column -->
+                    <div class="col-12 col-md-6">
+                        <div class="as-col">
+                            <h3>Supercharging Your Immunity: Unveiling Advanced Biohacking Therapies for Optimal Defence with The Biohacker</h3>
+                            <p>In the fast-paced modern world, safeguarding our immunity is of utmost importance. Biohacking, a revolutionary approach to optimizing human potential, has opened up new avenues for fortifying our body’s natural defense mechanisms. At Biohacker Clinic, we are dedicated to exploring innovative therapies that transcend conventional methods.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4 tab-content-item d-none" id="blog_tab3">
+                <div class="row row about-us-row align-items-center">
+                    <!-- Image Column -->
+                    <div class="col-12 col-md-6 mb-3 mb-md-0 round-img">
+                        <div class="as-col  as-col-1">
+                            <img src="assets/blogimg3.png" class="nitro-lazy" alt="Article 1">
+                        </div>
+                    </div>
+                    <!-- Text Column -->
+                    <div class="col-12 col-md-6">
+                        <div class="as-col">
+                            <h3>HBOT Treatment For Autism: A Promising Alternative</h3>
+                            <p>You may hear mitochondria called “the powerhouse of the cell.” Mitochondria are an energy factory.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4 tab-content-item d-none" id="blog_tab4">
+                <div class="row row about-us-row align-items-center">
+                    <!-- Image Column -->
+                    <div class="col-12 col-md-6 mb-3 mb-md-0 round-img">
+                        <div class="as-col  as-col-1">
+                            <img src="assets/blogimg4.jpeg" class="nitro-lazy" alt="Article 1">
+                        </div>
+                    </div>
+                    <!-- Text Column -->
+                    <div class="col-12 col-md-6">
+                        <div class="as-col">
+                            <h3>Elevate Your Sleep with The Biohacker: Unveiling Advanced Biohacking Techniques for Optimal Rest</h3>
+                            <p>achieving restorative sleep has become an elusive gem. However, the realm of biohacking offers a gateway to a new era of sleep optimization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content-item');
+
+            tabButtons.forEach(function (button) {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // Get the target ID from data-target
+                    const target = this.getAttribute('data-target');
+
+                    // Remove 'active' class from all buttons
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add 'active' class to the clicked button
+                    this.classList.add('active');
+
+                    // Hide all tab content by adding 'd-none'
+                    tabContents.forEach(content => content.classList.add('d-none'));
+
+                    // Show the selected tab content by removing 'd-none'
+                    const selectedTab = document.getElementById(target);
+                    if (selectedTab) {
+                        selectedTab.classList.remove('d-none');
+                    }
+                });
+            });
+        });
+
+    </script>
+    <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
+    <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/js/data.js"></script>
 
 </asp:Content>
 

@@ -2,260 +2,234 @@
 
 <!DOCTYPE html>
 
-<html ng-app="Website">
-<head runat="server">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>The BioHacker Admin Pannel</title>
-    <!-- Fevicon -->
-    <link rel="shortcut icon" href="../../Image\loogo.png">
-    <!-- Start css -->
-    <!-- Switchery css -->
-    <link href="../assets/plugins/switchery/switchery.min.css" rel="stylesheet">
-    <!-- Apex css -->
-    <link href="../assets/plugins/apexcharts/apexcharts.css" rel="stylesheet">
-    <!-- Slick css -->
-    <link href="../assets/plugins/slick/slick.css" rel="stylesheet">
-    <link href="../assets/plugins/slick/slick-theme.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/icons.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <style>
-        .pagee {
-            margin: 100px 30px 0 30px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 3px;
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
-            border-bottom-left-radius: 3px;
-            width: 100%;
-        }
-    </style>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <script src="../../Angular/Angular.js"></script>
-    <script src="../../Angular/Websitecontroller.js"></script>
+<html data-ng-app="Website">
+<head>
+	<!-- Title Meta -->
+	<meta charset="utf-8" />
+	<title>Dashboard BioHacker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A fully responsive premium admin dashboard template" />
+	<meta name="author" content="Techzaa" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- App favicon -->
+	<link rel="shortcut icon" href="../../assets/fav.png">
+	<!-- Vendor css (Require in all Page) -->
+	<link href="../assets/css/vendor.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Icons css (Require in all Page) -->
+	<link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- App css (Require in all Page) -->
+	<link href="../assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Theme Config js (Require in all Page) -->
+	<script src="../assets/js/config.js"></script>
+
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+
+	<script src="../../Angular/Angular.js"></script>
+	<script src="../../Angular/Websitecontroller.js"></script>
 </head>
-<body class="vertical-layout">
-    <form runat="server">
-        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-        <!-- Start Infobar Setting Sidebar -->
-        <div id="infobar-settings-sidebar" class="infobar-settings-sidebar">
-            <div class="infobar-settings-sidebar-head d-flex w-100 justify-content-between">
-                <h4>Settings</h4>
-                <a href="javascript:void(0)" id="infobar-settings-close" class="infobar-settings-close">
-                    <img src="../assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close"></a>
-            </div>
-        </div>
-        <div class="infobar-settings-sidebar-overlay"></div>
-        <!-- End Infobar Setting Sidebar -->
-        <!-- Start Containerbar -->
-        <div id="containerbar" data-ng-controller="Dashboard">
-            <!-- Start Leftbar -->
-            <div class="leftbar">
-                <!-- Start Sidebar -->
-                <div class="sidebar">
-                    <!-- Start Logobar -->
-                    <div class="logobar">
-                        <a href="Default.aspx" class="logo logo-large">
-                            <img src="../../assets/logo-black.png" class="img-fluid" alt="logo" style="width: 150px; height: 40px;"><span style="font-size: 20px">&nbsp;&nbsp;</span></a>
-                        <a href="Default.aspx" class="logo logo-small">
-                            <img src="../../assets/logo-black.png" class="img-fluid" alt="logo" style="width: 150px; height: 40px;"></a>
-                    </div>
-                    <!-- End Logobar -->
-                    <!-- Start Navigationbar -->
-                    <div class="navigationbar">
-                        <ul class="vertical-menu" id="Franchise" style="display: none">
-                            <li>
-                                <a href="Dashboard.aspx">
-                                    <img src="../assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Dashboard</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="StudentRegistration.aspx">
-                                    <img src="../assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Student Registration</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javaScript:void();">
-                                    <img src="../assets/images/svg-icon/basic.svg" class="img-fluid" alt="basic"><span>Student Request</span><i class="feather icon-chevron-right pull-right"></i>
-                                </a>
-                                <ul class="vertical-submenu">
-                                    <li><a href="SendToBrnach.aspx">Send Request To Branch</a></li>
-                                    <li><a href="ConfirmedStudent.aspx">Confirmed Student</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="vertical-menu" id="Admin">
-                            <li>
-                                <a href="Dashboard.aspx">
-                                    <img src="../assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Dashboard</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Mainmenu.aspx">
-                                    <img src="../assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Add Menu</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="AssignUrl.aspx">
-                                    <img src="../assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Assign Url</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javaScript:void();">
-                                    <img src="../assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Add Detail</span><i class="feather icon-chevron-right pull-right"></i>
-                                </a>
-                                <ul class="vertical-submenu">
-                                    <li><a href="AddCategory.aspx">Add Category</a></li>
-                                    <li><a href="AddDetail.aspx">Add Product Detail</a></li>
-                                    <li><a href="AddBlog.aspx">Add Blog Detail</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="AssignUrl.aspx">
-                                    <img src="../assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Invoice</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javaScript:void();">
-                                    <img src="../assets/images/svg-icon/basic.svg" class="img-fluid" alt="basic"><span>Enquiry</span><i class="feather icon-chevron-right pull-right"></i>
-                                </a>
-                                <ul class="vertical-submenu">
-                                    <li><a href="Enquiry.aspx">Enquiry</a></li>
-                                    <li><a href="#">Online Booking</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- End Navigationbar -->
-                </div>
-                <!-- End Sidebar -->
-            </div>
-            <!-- End Leftbar -->
-            <!-- Start Rightbar -->
-            <div class="rightbar">
-                <!-- Start Topbar Mobile -->
-                <div class="topbar-mobile">
-                    <div class="row align-items-center">
-                        <div class="col-md-12">
-                            <div class="mobile-logobar">
-                                <a href="index.html" class="mobile-logo">
-                                    <img src="../../Image\loogo1.jpg" class="img-fluid" alt="logo" style="width: 40px; height: 40px;"></a>
-                            </div>
-                            <div class="mobile-togglebar">
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item">
-                                        <div class="topbar-toggle-icon">
-                                            <a class="topbar-toggle-hamburger" href="javascript:void();">
-                                                <img src="../assets/images/svg-icon/horizontal.svg" class="img-fluid menu-hamburger-horizontal" alt="horizontal">
-                                                <img src="../assets/images/svg-icon/verticle.svg" class="img-fluid menu-hamburger-vertical" alt="verticle">
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <div class="menubar">
-                                            <a class="menu-hamburger" href="javascript:void();">
-                                                <img src="../assets/images/svg-icon/collapse.svg" class="img-fluid menu-hamburger-collapse" alt="collapse">
-                                                <img src="../assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close">
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Start Topbar -->
-                <div class="topbar">
-                    <!-- Start row -->
-                    <div class="row align-items-center">
-                        <!-- Start col -->
-                        <div class="col-md-12 align-self-center">
-                            <div class="infobar">
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item">
-                                        <div class="settingbar" style="visibility: hidden">
-                                            <a href="javascript:void(0)" id="infobar-settings-open" class="infobar-icon">
-                                                <img src="../assets/images/svg-icon/settings.svg" class="img-fluid" alt="settings">
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <div class="profilebar">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" href="#" role="button" id="profilelink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <img src="../assets/images/users/profile.svg" class="img-fluid" alt="profile"><span class="feather icon-chevron-down live-icon"></span></a>
-                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profilelink">
-                                                    <div class="dropdown-item">
-                                                        <div class="profilename">
-                                                            <h5>{{logname}}</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="userbox">
-                                                        <input type="button" ng-click="outme()" value="{{jackout}}" class=" " />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- End col -->
-                    </div>
-                    <!-- End row -->
-                </div>
 
-                <!-- End Topbar -->
-                <!-- Start Breadcrumbbar -->
+<body>
+	<form runat="server">
+		<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+		<!-- START Wrapper -->
+		<div class="wrapper">
 
-                <!-- End Breadcrumbbar -->
-                <!-- Start Contentbar -->
+			<!-- ========== Topbar Start ========== -->
+			<header class="topbar" data-ng-controller="Dashboard">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<div class="d-flex align-items-center">
+							<!-- Menu Toggle Button -->
+							<div class="topbar-item">
+								<button type="button" class="button-toggle-menu me-2">
+									<iconify-icon icon="solar:hamburger-menu-broken" class="fs-24 align-middle"></iconify-icon>
+								</button>
+							</div>
 
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-                <br />
-                <br />
-                <!-- End Contentbar -->
-                <!-- Start Footerbar -->
-                <div class="footerbar">
-                    <footer class="footer">
-                        <p class="mb-0">© 2025 The BioHacker - All Rights Reserved.</p>
-                    </footer>
-                </div>
-                <!-- End Footerbar -->
-            </div>
-            <!-- End Rightbar -->
-        </div>
-    </form>
-    <!-- End Containerbar -->
-    <!-- Start js -->
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/popper.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/modernizr.min.js"></script>
-    <script src="../assets/js/detect.js"></script>
-    <script src="../assets/js/jquery.slimscroll.js"></script>
-    <script src="../assets/js/vertical-menu.js"></script>
-    <!-- Switchery js -->
-    <script src="../assets/plugins/switchery/switchery.min.js"></script>
-    <!-- Apex js -->
-    <script src="../assets/plugins/apexcharts/apexcharts.min.js"></script>
-    <script src="../assets/plugins/apexcharts/irregular-data-series.js"></script>
-    <!-- Slick js -->
-    <script src="../assets/plugins/slick/slick.min.js"></script>
-    <!-- Custom Dashboard js -->
-    <script src="../assets/js/custom/custom-dashboard.js"></script>
-    <!-- Core js -->
-    <script src="../assets/js/core.js"></script>
-    <!-- End js -->
+							<!-- Menu Toggle Button -->
+							<div class="topbar-item">
+								<h4 class="fw-bold topbar-button pe-none text-uppercase mb-0">Welcome!</h4>
+							</div>
+						</div>
 
+						<div class="d-flex align-items-center gap-1">
+							<!-- User -->
+							<div class="dropdown topbar-item">
+								<a type="button" class="topbar-button" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="d-flex align-items-center">
+										<img class="rounded-circle" width="32" src="../assets/images/users/avatar-1.jpg" alt="avatar-3">
+									</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<!-- item-->
+									<h6 class="dropdown-header">Welcome {{logname}}</h6>
+									<div class="dropdown-divider my-1"></div>
+
+									<a class="dropdown-item text-danger" href="#" ng-click="outme()">
+										<i class="bx bx-log-out fs-18 align-middle me-1"></i><span class="align-middle">{{jackout}}</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- ========== App Menu Start ========== -->
+			<div class="main-nav">
+				<!-- Sidebar Logo -->
+				<div class="logo-box">
+					<a href="Dashboard.aspx" class="logo-dark">
+						<img src="../assets/images/logoadmin.png" class="logo-sm" alt="logo sm">
+						<img src="../assets/images/logoadmin.png" class="logo-lg" alt="logo dark">
+					</a>
+
+					<a href="Dashboard.aspx" class="logo-light">
+						<img src="../assets/images/logoadmin.png" class="logo-sm" alt="logo sm">
+						<img src="../assets/images/logoadmin.png" class="logo-lg" alt="logo light">
+					</a>
+				</div>
+
+
+
+				<div class="scrollbar" data-simplebar>
+					<ul class="navbar-nav" id="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="Dashboard.aspx">
+								<span class="nav-icon">
+									<iconify-icon icon="solar:widget-5-bold-duotone"></iconify-icon>
+								</span>
+								<span class="nav-text">Dashboard </span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-arrow" href="#sidebarProducts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProducts">
+								<span class="nav-icon">
+									<iconify-icon icon="solar:t-shirt-bold-duotone"></iconify-icon>
+								</span>
+								<span class="nav-text">Add Detail </span>
+							</a>
+							<div class="collapse" id="sidebarProducts">
+								<ul class="nav sub-navbar-nav">
+									<li class="sub-nav-item">
+										<a class="sub-nav-link" href="AddSubCategory.aspx">Add Sub-Category</a>
+									</li>
+									<li class="sub-nav-item">
+										<a class="sub-nav-link" href="AddDetail.aspx">Add Product Detail</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-arrow" href="#sidebarCategory" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCategory">
+								<span class="nav-icon">
+									<iconify-icon icon="solar:clipboard-list-bold-duotone"></iconify-icon>
+								</span>
+								<span class="nav-text">Gallery </span>
+							</a>
+							<div class="collapse" id="sidebarCategory">
+								<ul class="nav sub-navbar-nav">
+									<li class="sub-nav-item">
+										<a class="sub-nav-link" href="GalleryCat.aspx">Gallery Category</a>
+									</li>
+									<li class="sub-nav-item">
+										<a class="sub-nav-link" href="Gallery.aspx">Add Image</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-arrow" href="#sidebarInventory" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCategory">
+								<span class="nav-icon">
+									<iconify-icon icon="solar:clipboard-list-bold-duotone"></iconify-icon>
+								</span>
+								<span class="nav-text">Blog </span>
+							</a>
+							<div class="collapse" id="sidebarInventory">
+								<ul class="nav sub-navbar-nav">
+									<li class="sub-nav-item">
+										<a class="sub-nav-link" href="BlogCat.aspx">Blog Category</a>
+									</li>
+									<li class="sub-nav-item">
+										<a class="sub-nav-link" href="Blog.aspx">Add Blog Detail</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-arrow" href="#sidebarOrders" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCategory">
+								<span class="nav-icon">
+									<iconify-icon icon="solar:clipboard-list-bold-duotone"></iconify-icon>
+								</span>
+								<span class="nav-text">Enquiry </span>
+							</a>
+							<div class="collapse" id="sidebarOrders">
+								<ul class="nav sub-navbar-nav">
+									<li class="sub-nav-item">
+										<a class="sub-nav-link" href="Enquiry.aspx">Enquiry</a>
+									</li>
+									<li class="sub-nav-item">
+										<a class="sub-nav-link" href="#">Online Booking</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- ========== App Menu End ========== -->
+			<!-- ==================================================== -->
+			<!-- Start right Content here -->
+			<div class="page-content">
+				<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+				</asp:ContentPlaceHolder>
+
+				<!-- ==================================================== -->
+
+			</div>
+
+			<!-- ========== Footer Start ========== -->
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 text-center">
+							<script>document.write(new Date().getFullYear())</script>
+							&copy; BioHacker
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- ========== Footer End ========== -->
+
+		</div>
+		<!-- ==================================================== -->
+		<!-- End Page Content -->
+		<!-- ==================================================== -->
+
+		<!-- END Wrapper -->
+	</form>
+	<!-- Vendor Javascript (Require in all Page) -->
+	<script src="../assets/js/vendor.js"></script>
+
+	<!-- App Javascript (Require in all Page) -->
+	<script src="../assets/js/app.js"></script>
+
+	<!-- Vector Map Js -->
+	<script src="a../ssets/vendor/jsvectormap/js/jsvectormap.min.js"></script>
+	<script src="../assets/vendor/jsvectormap/maps/world-merc.js"></script>
+	<script src="../assets/vendor/jsvectormap/maps/world.js"></script>
+
+	<!-- Dashboard Js -->
+	<script src="../assets/js/pages/dashboard.js"></script>
 
 </body>
 </html>
